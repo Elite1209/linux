@@ -1706,8 +1706,8 @@
 // }
 ///////////////////////////////////////preprocessor directives////////////////////////
 // #include<stdio.h>
-// #define pi 3.14 
-// #define square(x) x*x 
+// #define pi 3.14
+// #define square(x) x*x
 
 // int main (){
 //     int n;
@@ -1715,7 +1715,6 @@
 //     scanf("%d",&n);
 //     float area = pi*square(n);
 //     printf("The are is %f \n",area);
-    
 
 // return 0;
 // }
@@ -1724,7 +1723,7 @@
 // int main (){
 
 //     printf("File Name is %s\n",__FILE__);
-    // printf("Todays date is %s\n",__DATE__);
+// printf("Todays date is %s\n",__DATE__);
 //     printf("The current time is %s\n",__TIME__);
 //     printf("Line No. is %d\n",__LINE__);
 //     printf("IF the compiler is according to ANSI it will return 1 : %d\n",__STDC__);
@@ -1744,7 +1743,7 @@
 //     char c = fgetc(ptr);
 //     printf("The character I read was %c\n",c);//This will read the first character
 //     c = fgetc(ptr);
-//     printf("The character I read was %c\n",c);//This will read from onwards 
+//     printf("The character I read was %c\n",c);//This will read from onwards
 //     c = fgetc(ptr);
 //     printf("The character I read was %c\n",c);
 //     c = fgetc(ptr);
@@ -1752,10 +1751,32 @@
 //     fclose(ptr);
 //     ptr = fopen("bablu.txt","r");
 //     c = fgetc(ptr);
-//     printf("The character I read was %c\n",c);//it will start reading from the first character 
-
+//     printf("The character I read was %c\n",c);//it will start reading from the first character
 
 // return 0;
 // }
+///////////////////////////////////////////////////////////Function Pointers ///////////////////////////////////////////////////////
+// #include <stdio.h>
+// int average(int a, int b)
+// {
+//     return (a*b);
+// }
+// void GoodEveningAndExecute(int (*ptr)(int, int))
+// {
+//     printf("Good Evening Sir\n");
+//     printf("The product of 5 and 8 is %d\n", ptr(5, 8));
+// }
+// void GoodNightAndExecute(int (*ptr)(int, int))
+// {
+//     printf("Good Night Sir\n");
+//     printf("The product of 5 and 8 is %d\n", ptr(5, 8));
+// }
+// int main()
+// {
+//     int (*ptr)(int, int);
+//     ptr = average;
+//     GoodEveningAndExecute(ptr);
+//     GoodNightAndExecute(ptr);
 
-
+//     return 0;
+// }
