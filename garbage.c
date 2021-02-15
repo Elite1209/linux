@@ -1724,10 +1724,38 @@
 // int main (){
 
 //     printf("File Name is %s\n",__FILE__);
-//     printf("Todays date is %s\n",__DATE__);
+    // printf("Todays date is %s\n",__DATE__);
 //     printf("The current time is %s\n",__TIME__);
 //     printf("Line No. is %d\n",__LINE__);
 //     printf("IF the compiler is according to ANSI it will return 1 : %d\n",__STDC__);
 
 // return 0;
 // }
+///////////////////////////Standard Function for file pointer in stdio.h/////////////////////////////
+// fscanf(pointer,format_specifier,address);
+// fprintf(pointer,string_literal,format_specifier);
+//////////////////////Reading Character from text file////////////////
+// #include<stdio.h>
+// int main (){
+
+//     FILE *ptr = NULL;
+//     ptr = fopen("bablu.txt","r");
+//     // fprintf(ptr,"This is the content of the file ");
+//     char c = fgetc(ptr);
+//     printf("The character I read was %c\n",c);//This will read the first character
+//     c = fgetc(ptr);
+//     printf("The character I read was %c\n",c);//This will read from onwards 
+//     c = fgetc(ptr);
+//     printf("The character I read was %c\n",c);
+//     c = fgetc(ptr);
+//     printf("The character I read was %c\n",c);//Now if I close the file it would reading from starting because i freed the pointer by closing the file
+//     fclose(ptr);
+//     ptr = fopen("bablu.txt","r");
+//     c = fgetc(ptr);
+//     printf("The character I read was %c\n",c);//it will start reading from the first character 
+
+
+// return 0;
+// }
+
+
