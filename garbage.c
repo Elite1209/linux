@@ -1719,3 +1719,15 @@
 
 // return 0;
 // }
+///////////////////////////////////Predefined Macros////////////////////////////////
+#include<stdio.h>
+int main (){
+
+    printf("File Name is %s\n",__FILE__);
+    printf("Todays date is %s\n",__DATE__);
+    printf("The current time is %s\n",__TIME__);
+    printf("Line No. is %d\n",__LINE__);
+    printf("IF the compiler is according to ANSI it will return 1 : %d\n",__STDC__);
+
+return 0;
+}
