@@ -1948,7 +1948,7 @@
 // Test Data :
 // Input a number : 5
 // Expected Output :
-// 
+//
 // The Factorial of 5 is : 120
 // #include<stdio.h>
 // void factorial(int *n,int *fact )
@@ -1959,7 +1959,7 @@
 //         *fact *= i;
 //     }
 //     printf("The value of %d factorial is %d ",*n,*fact);
-    
+
 // }
 // int main (){
 
@@ -1975,7 +1975,7 @@
 // Input a string: string
 // Expected Output :
 
-// Number of vowels : 1                                                                                         
+// Number of vowels : 1
 // Number of constant : 5
 // #include<stdio.h>
 // void countvowelsandconsonants(char *str)
@@ -1983,7 +1983,7 @@
 //     int vowels = 0,consona = 0;
 //     while (*str != '\0')
 //     {
-//         if (*str == 'a'||*str == 'e'||*str == 'i'||*str == 'o'||*str == 'u'||*str=='A' ||*str=='E' ||*str=='I' ||*str=='O' ||*str=='U') 
+//         if (*str == 'a'||*str == 'e'||*str == 'i'||*str == 'o'||*str == 'u'||*str=='A' ||*str=='E' ||*str=='I' ||*str=='O' ||*str=='U')
 //         {
 //             vowels++;
 //         }
@@ -1991,7 +1991,7 @@
 //         {
 //             consona++;
 //         }
-        
+
 //         str++;
 //     }
 //     printf("Number of vowels is %d\n",vowels);
@@ -2006,13 +2006,69 @@
 //     // printf("The string is %s",string);
 //     countvowelsandconsonants(string);
 
-
-
 // return 0;
 // }
 
+// 14. Write a program in C to sort an array using Pointer. Go to the editor
+// Test Data :
+// testdata
+// Expected Output :
+//
+// Test Data :
+// Input the number of elements to store in the array : 5
+// Input 5 number of elements in the array :
+// element - 1 : 25
+// element - 2 : 45
+// element - 3 : 89
+// element - 4 : 15
+// element - 5 : 82
+// Expected Output :
+//
+//  The elements in the array after sorting :
+//  element - 1 : 15
+//  element - 2 : 25
+//  element - 3 : 45
+//  element - 4 : 82
+//  element - 5 : 89
+//////////////////////******************************************************************************************************************///////////////////////////////
+/////////////////////*/*//*/*/******************/*/*/*************/**//**//*/*/*/**/*/*//*/*/*/*/*/*/*/*/*/*//**/*//*/*/*/*/*/**/*/*/*/*/*/*/*/*/*/**//*/*/*/*/*/*/*///
+// #include<stdio.h>
+// int main (){
 
+//     int n,temp;
+//     int arr[35];
+//     int *ptr = arr;
+//     printf("Enter the number of elements you want to input\n");
+//     scanf("%d",&n);
+//     for (int  i = 0; i < n; i++)
+//     {
+//         scanf("%d",ptr+i);
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = i+1; j < n; j++)
+//         {
 
+//             if (*(arr+i)>*(arr+j))
+//             {
+//                 temp = *(arr+i);
+//                 *(arr+i)= *(arr+j);
+//                 *(arr+j)= temp;
 
+//             }
+            
+                
+//         }
+        
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("%d  ",*(arr+i));
+//     }
+    
+    
+    
+        
 
-
+// return 0;
+// }
