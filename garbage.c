@@ -1857,3 +1857,30 @@
 
 //     return 0;
 // }
+///////////////////////////////////////////////////Write a program in C to find the largest element using Dynamic Memory Allocation./////////////////////////////////////
+// #include<stdio.h>
+// #include<stdlib.h>
+// int main (){
+//     int n;
+//     printf("Enter the number of elements you want to get the maximum from\n");
+//     scanf("%d",&n);
+//     int * ptr  = malloc(n*sizeof(int));
+//     for (int  i = 0; i < n; i++)
+//     {
+//         printf("Enter Element %d : ",i+1);
+//         scanf("%d",&ptr[i]);
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (*ptr<*(ptr+i))
+//         {
+//             *ptr = *(ptr+i);
+//         }
+        
+//     }
+//     printf("The largest element is %d",*ptr);
+    
+
+
+// return 0;
+// }
