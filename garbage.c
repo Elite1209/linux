@@ -1433,7 +1433,7 @@
 
 // 	return 0;
 // }
-//////////////////////////////// C Program to find sum of digits of a number /////////////////////
+// ////////////////////////////// C Program to find sum of digits of a number /////////////////////
 // #include <stdio.h>
 // int main()
 // {
@@ -1458,7 +1458,7 @@
 //     return 0;
 // }
 
-////////////////////////////////////////////////Gets and puts/////////////////////////////////////////
+// //////////////////////////////////////////////Gets and puts/////////////////////////////////////////
 
 // #include <stdio.h>
 
@@ -1504,7 +1504,7 @@
 //     return 0;
 // }
 
-//////////////////////////////////Input of a string character by character &&  by using the %s /////////////////////////////
+// ////////////////////////////////Input of a string character by character &&  by using the %s /////////////////////////////
 
 // #include <stdio.h>
 
@@ -1528,7 +1528,7 @@
 //     printf("The value for the second string is %s\n",st2);
 //     return 0;
 // }
-//////////////////////////////////Program in C to check the number of times a character in a string//////////////////////
+// ////////////////////////////////Program in C to check the number of times a character in a string//////////////////////
 // #include <stdio.h>
 // int CheckCharacter(char st[], char c)
 // {
@@ -1581,7 +1581,7 @@
 
 //     return 0;
 // }
-/////////////Reading String input in c using fgets (kaha_store_krni_hai,array_size,stdin);//////////////////////////////////////
+// ///////////Reading String input in c using fgets (kaha_store_krni_hai,array_size,stdin);//////////////////////////////////////
 // #include <stdio.h>
 // int main()
 // {
@@ -1593,7 +1593,7 @@
 
 //     return 0;
 // }
-//////////////////////////////////To check whether a string is palindrome or not////////////////////////
+// ////////////////////////////////To check whether a string is palindrome or not////////////////////////
 // #include <stdio.h>
 
 // int main()
@@ -1623,8 +1623,8 @@
 //         printf("%s is not a palindrome \n", string);
 //         return 0;
 // }
-/////////////////fscanf(pointer,format_specifier,address);/////////////////////////////
-/////////////////fprintf(pointer,string_literal,format_specifier);/////////////////////////////
+// ///////////////fscanf(pointer,format_specifier,address);/////////////////////////////
+// ///////////////fprintf(pointer,string_literal,format_specifier);/////////////////////////////
 // #include <stdio.h>
 
 // int main(){
@@ -1638,7 +1638,7 @@
 
 //     return 0;
 // }
-///////////////////////////////////////////////DMA Calloc and Realloc//////////////////////////////////////
+// /////////////////////////////////////////////DMA Calloc and Realloc//////////////////////////////////////
 // #include <stdio.h>
 // #include <stdlib.h>
 
@@ -1664,8 +1664,8 @@
 
 //     return 0;
 // }
-/////////////////////////////////////////////program to seperate the odd and even elements of an array //////////////////////////////
-////////////////////////////////////////////////Can be used for integer array also //////////////////////////////////////////////////
+// ///////////////////////////////////////////program to seperate the odd and even elements of an array //////////////////////////////
+// //////////////////////////////////////////////Can be used for integer array also //////////////////////////////////////////////////
 
 // #include <stdio.h>
 // #include <string.h>
@@ -1704,7 +1704,7 @@
 
 //     return 0;
 // }
-///////////////////////////////////////preprocessor directives////////////////////////
+// /////////////////////////////////////preprocessor directives////////////////////////
 // #include<stdio.h>
 // #define pi 3.14
 // #define square(x) x*x
@@ -1718,7 +1718,7 @@
 
 // return 0;
 // }
-///////////////////////////////////Predefined Macros////////////////////////////////
+// /////////////////////////////////Predefined Macros////////////////////////////////
 // #include<stdio.h>
 // int main (){
 
@@ -1730,10 +1730,10 @@
 
 // return 0;
 // }
-///////////////////////////Standard Function for file pointer in stdio.h/////////////////////////////
+// /////////////////////////Standard Function for file pointer in stdio.h/////////////////////////////
 // fscanf(pointer,format_specifier,address);
 // fprintf(pointer,string_literal,format_specifier);
-///////////////////////////////////////////////////////////Reading Character from text file////////////////////////////////
+// /////////////////////////////////////////////////////////Reading Character from text file////////////////////////////////
 // #include<stdio.h>
 // int main (){
 
@@ -1755,7 +1755,7 @@
 
 // return 0;
 // }
-///////////////////////////////////////////////////////////Function Pointers ///////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////Function Pointers ///////////////////////////////////////////////////////
 // #include <stdio.h>
 // int average(int a, int b)
 // {
@@ -1780,7 +1780,7 @@
 
 //     return 0;
 // }
-//////////////////////////////////////////////Program to find maximum of 2 numbers using pointers////////////////////////////////////////
+// ////////////////////////////////////////////Program to find maximum of 2 numbers using pointers////////////////////////////////////////
 
 // #include <stdio.h>
 // void maxOfTwoNum(int *ptr, int *ptr2)
@@ -1797,9 +1797,9 @@
 //     {
 //         printf("The numbers are same\n");
 //     }
-    
+
 // }
-    
+
 // int main()
 // {
 
@@ -1813,5 +1813,46 @@
 //     ptr = &n;
 //     pttr = &m;
 //     maxOfTwoNum(ptr, pttr);
+//     return 0;
+// }
+
+// ////////////////////////////////////////Write a program in C to print all permutations of a given string using pointers.////////////////////
+
+// #include <stdio.h>
+// #include <string.h>
+// void swap_char(char *c1, char *c2)//Function Which swaps the character first 
+// {
+//     char temp;
+//     temp = *c1;
+//     *c1 = *c2;
+//     *c2 = temp;
+// }
+// void permutation(char *string, int n, int length)
+// {
+//     if (n == length)//iff both the indexes of arrays are equal then print the array 
+//     {
+//         printf("%s", string);
+//     }
+//     else
+//     {
+//         for (int j = n; j < length; j++)//for loop runs for length times//this loop helps us find the numbers of permutation and prints in previous if statement
+//         {
+//             swap_char((string + n), (string + j));//It swaps the character first and then it calls the function back
+//             permutation(string, n + 1, length);//recursive function
+//             swap_char((string + n), (string + j));//here Backtracking happens and now the charcters are back to their original position 
+//         }
+//     }
+// }
+
+// int main()
+// {
+
+//     char str[33];
+//     printf("Enter the string\n");
+//     fgets(str, 33, stdin);
+//     int len = strlen(str);
+//     // printf("The string you entered is %s", str);
+//     permutation(str, 0, len - 1);//function call 
+
 //     return 0;
 // }
