@@ -1733,7 +1733,7 @@
 ///////////////////////////Standard Function for file pointer in stdio.h/////////////////////////////
 // fscanf(pointer,format_specifier,address);
 // fprintf(pointer,string_literal,format_specifier);
-//////////////////////Reading Character from text file////////////////
+///////////////////////////////////////////////////////////Reading Character from text file////////////////////////////////
 // #include<stdio.h>
 // int main (){
 
@@ -1778,5 +1778,40 @@
 //     GoodEveningAndExecute(ptr);
 //     GoodNightAndExecute(ptr);
 
+//     return 0;
+// }
+//////////////////////////////////////////////Program to find maximum of 2 numbers using pointers////////////////////////////////////////
+
+// #include <stdio.h>
+// void maxOfTwoNum(int *ptr, int *ptr2)
+// {
+//     if ((*ptr) > (*ptr2))
+//     {
+//         printf("%d is the biggest number\n", *ptr);
+//     }
+//     else if ((*ptr2) > (*ptr))
+//     {
+//         printf("%d is the biggest number\n", *ptr2);
+//     }
+//     else
+//     {
+//         printf("The numbers are same\n");
+//     }
+    
+// }
+    
+// int main()
+// {
+
+//     int n, m;
+//     printf("Enter the first Number\n");
+//     scanf("%d", &n);
+//     printf("Enter the Second Number\n");
+//     scanf("%d", &m);
+//     typedef int *pointer;
+//     pointer ptr, pttr;
+//     ptr = &n;
+//     pttr = &m;
+//     maxOfTwoNum(ptr, pttr);
 //     return 0;
 // }
