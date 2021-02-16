@@ -1821,7 +1821,7 @@
 
 // #include <stdio.h>
 // #include <string.h>
-// void swap_char(char *c1, char *c2)//Function Which swaps the character first 
+// void swap_char(char *c1, char *c2)//Function Which swaps the character first
 // {
 //     char temp;
 //     temp = *c1;
@@ -1830,7 +1830,7 @@
 // }
 // void permutation(char *string, int n, int length)
 // {
-//     if (n == length)//iff both the indexes of arrays are equal then print the array 
+//     if (n == length)//iff both the indexes of arrays are equal then print the array
 //     {
 //         printf("%s", string);
 //     }
@@ -1840,7 +1840,7 @@
 //         {
 //             swap_char((string + n), (string + j));//It swaps the character first and then it calls the function back
 //             permutation(string, n + 1, length);//recursive function
-//             swap_char((string + n), (string + j));//here Backtracking happens and now the charcters are back to their original position 
+//             swap_char((string + n), (string + j));//here Backtracking happens and now the charcters are back to their original position
 //         }
 //     }
 // }
@@ -1853,7 +1853,7 @@
 //     fgets(str, 33, stdin);
 //     int len = strlen(str);
 //     // printf("The string you entered is %s", str);
-//     permutation(str, 0, len - 1);//function call 
+//     permutation(str, 0, len - 1);//function call
 
 //     return 0;
 // }
@@ -1876,11 +1876,143 @@
 //         {
 //             *ptr = *(ptr+i);
 //         }
-        
+
 //     }
 //     printf("The largest element is %d",*ptr);
+
+// return 0;
+// }
+
+// 10. Write a program in C to Calculate the length of the string using a pointer. Go to the editor
+// Test Data :
+// Input a string : w3resource
+// Expected Output :
+
+// The length of the given string w3resource
+// is : 10
+// #include<stdio.h>
+// int main (){
+
+//     int n = 0;
+//     char string[33];
+//     char *ptr = string;
+//     printf("Please enter the string\n");
+//     fgets(string,sizeof(string),stdin);
+//     while (*ptr != '\0')
+//     {
+//         n++;
+//         ptr++;
+//     }
+// printf("The length of the string is %d",n-1);
+
+// return 0;
+// }
+// 11. Write a program in C to swap elements using call by reference. Go to the editor
+// Test Data :
+// Input the value of 1st element : 5
+// Input the value of 2nd element : 6
+// Input the value of 3rd element : 7
+// The value before swapping are :
+// element 1 = 5
+// element 2 = 6
+// element 3 = 7
+
+// The value after swapping are :
+// element 1 = 7
+// element 2 = 5
+// element 3 = 6
+
+// #include<stdio.h>
+// void swap_value(int*a,int *b,int *c)
+// {
+//     int temp;
+//     temp  = *c;
+//     *c = *b;
+//     *b = *a;
+//     *a = temp;
+// }
+// int main (){
+//     int a,b,c;
+//     printf("Enter the first element\n");
+//     scanf("%d",&a);
+//     printf("Enter the second element\n");
+//     scanf("%d",&b);
+//     printf("Enter the third element\n");
+//     scanf("%d",&c);
+//     printf("The value of a b and c before swapping is %d %d %d ",a,b,c);
+//     swap_value(&a,&b,&c);
+//     printf("The value of a b and c after swapping is %d %d %d ",a,b,c);
+// return 0;
+// }
+// 12. Write a program in C to find the factorial of a given number using pointers. Go to the editor
+// Test Data :
+// Input a number : 5
+// Expected Output :
+// 
+// The Factorial of 5 is : 120
+// #include<stdio.h>
+// void factorial(int *n,int *fact )
+// {
+//     int num = *n;
+//     for (int  i = 1; i <= num; i++)
+//     {
+//         *fact *= i;
+//     }
+//     printf("The value of %d factorial is %d ",*n,*fact);
     
+// }
+// int main (){
+
+//     int n,fact = 1;
+//     printf("Enter the number\n");
+//     scanf("%d",&n);
+//     factorial(&n,&fact);
+
+// return 0;
+// }
+// 13. Write a program in C to count the number of vowels and consonants in a string using a pointer. Go to the editor
+// Test Data :
+// Input a string: string
+// Expected Output :
+
+// Number of vowels : 1                                                                                         
+// Number of constant : 5
+// #include<stdio.h>
+// void countvowelsandconsonants(char *str)
+// {
+//     int vowels = 0,consona = 0;
+//     while (*str != '\0')
+//     {
+//         if (*str == 'a'||*str == 'e'||*str == 'i'||*str == 'o'||*str == 'u'||*str=='A' ||*str=='E' ||*str=='I' ||*str=='O' ||*str=='U') 
+//         {
+//             vowels++;
+//         }
+//         else
+//         {
+//             consona++;
+//         }
+        
+//         str++;
+//     }
+//     printf("Number of vowels is %d\n",vowels);
+//     printf("Number of consonants is %d\n",consona-1);
+
+// }
+// int main (){
+
+//     char string[66];
+//     printf("Enter the string\n");
+//     fgets(string,sizeof(string),stdin);
+//     // printf("The string is %s",string);
+//     countvowelsandconsonants(string);
+
 
 
 // return 0;
 // }
+
+
+
+
+
+
