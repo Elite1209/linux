@@ -2241,9 +2241,7 @@
 //             string[index] = string[i];
 //             index++;
 //         }
-        
-        
-        
+
 //     }
 //     string[index] = '\0';
 //     //For removing spaces from beginning
@@ -2254,7 +2252,7 @@
 //             string[i] = string[i+1];
 
 //         }
-        
+
 //     }
 //     //For removing spaces from end
 //     while (string[strlen(string)-1] == ' ')
@@ -2268,7 +2266,6 @@
 //     printf("This is the string before parsing it%s\n",string);
 //     parser(string);
 //     printf("This is the string after parsing it :-\n-->%s<--\n",string);
-
 
 // return 0;
 // }
@@ -2291,31 +2288,31 @@
 //     for (int i = 0; i < n; i++)
 //     {
 //         printf("Enter the name for driver %d\n",i+1);
-//         // scanf("%s", &dr[i].name);        
+//         // scanf("%s", &dr[i].name);
 //         // scanf("%s",&d[i].name);
 //         gets(d[i].name);
-        
+
 //     }
 //     for (int i = 0; i < n; i++)
 //     {
 //         printf("Enter the number of Driving Liscense for driver %d\n",i+1);
-//         // scanf("%s", &dr[i].name);        
+//         // scanf("%s", &dr[i].name);
 //         scanf("%s",&d[i].dlno);
-        
+
 //     }
 //     for (int i = 0; i < n; i++)
 //     {
 //         printf("Specify the route for driver %d (1,2,or 3)\n",i+1);
-//         // scanf("%s", &dr[i].name);        
+//         // scanf("%s", &dr[i].name);
 //         scanf("%d",&d[i].route);
-        
+
 //     }
 //     for (int i = 0; i < n; i++)
 //     {
 //         printf("Enter the kms travelled for driver %d\n",i+1);
-//         // scanf("%s", &dr[i].name);        
+//         // scanf("%s", &dr[i].name);
 //         scanf("%d",&d[i].kms);
-        
+
 //     }
 //     for (int i = 0; i < n; i++)
 //     {
@@ -2324,10 +2321,8 @@
 //         printf("Route of driver %d is %d\n",i+1,d[i].route);
 //         printf("Kms driven for driver %d is %d\n",i+1,d[i].kms);
 //         printf("\n\n");
-        
+
 //     }
-    
-    
 
 // return 0;
 // }
@@ -2353,7 +2348,7 @@
 // #include<time.h>
 // int game(char you, char comp)
 // {
-    
+
 //     if (you == comp)
 //     {
 //         // printf("Draw\n");
@@ -2398,11 +2393,11 @@
 //     {
 //         comp = 's';
 //     }
-//     else 
+//     else
 //     {
 //         comp = 'q';
 //     }
-    
+
 //     int result = game(you,comp);
 //     if (result == 1)
 //     {
@@ -2416,8 +2411,6 @@
 //     {
 //         printf("You both chose %c Its a Draw",you);
 //     }
-    
-    
 
 //     return 0;
 // }
@@ -2487,7 +2480,7 @@
 //         reversed = reversed*10 + n%10;
 //         n/=10;
 //     }
-    
+
 //     return reversed;
 // }
 // int main (){
@@ -2503,7 +2496,67 @@
 //     else
 //     {
 //         printf("The number you entered is not a palindrome\n");
-        
+
 //     }
 //     return 0;
 // }
+
+// #include<stdio.h>
+// #include<math.h>
+// #define square(x) x*x
+// float Edistance(int x1,int x2,int y1,int y2)
+// {
+//     float distance;
+//     distance = square(x2-x1)+square(y2-y1);
+//     return sqrt(distance);
+// }
+// int main (){
+
+//     int x1,x2,y1,y2;
+//     float distance;
+//     printf("Enter the value of x1\n");
+//     scanf("%d",&x1);
+//     printf("Enter the value of x2\n");
+//     scanf("%d",&x2);
+//     printf("Enter the value of y1\n");
+//     scanf("%d",&y1);
+//     printf("Enter the value of y2\n");
+//     scanf("%d",&y2);
+//     distance = Edistance(x1,x2,y1,y2);
+//     printf("The distance is %.2f",distance);
+
+// return 0;
+// }
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float Edistance(int x1, int y1, int x2, int y2)
+{
+    int a = (y2 - y1) * (y2 - y1) + (x2 - x1) * (x2 - x1);
+    return sqrt(a);
+}
+int main()
+{
+    int x1, y1, x2, y2;
+    float dst;
+    printf("Enter the value of x1\n");
+
+    scanf("%d", &x1);
+
+    printf("Enter the value of x2\n");
+
+    scanf("%d", &x2);
+
+    printf("Enter the value of y1\n");
+
+    scanf("%d", &y1);
+
+    printf("Enter the value of y2\n");
+
+    scanf("%d", &y2);
+
+    dst = Edistance(x1, y1, x2, y2);
+    printf("The distance between these points is %.2f\n", dst);
+    return 0;
+}
