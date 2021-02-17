@@ -2272,4 +2272,62 @@
 
 // return 0;
 // }
+///////////////////////////////////////////////////////////////////////////Travel Agency Structure//////////////////////////////////////////////////////////
+// #include<stdio.h>
+// typedef struct travelAgencyManger
+// {
+//     char name[55];
+//     char dlno[55];
+//     int route;
+//     int kms;
+// }dr;
 
+// int main ()
+// {
+//     int n;
+//     dr d[20];
+//     printf("Enter the number of dirvers you want to input\n");
+//     scanf("%d",&n);
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("Enter the name for driver %d\n",i+1);
+//         // scanf("%s", &dr[i].name);        
+//         // scanf("%s",&d[i].name);
+//         gets(d[i].name);
+        
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("Enter the number of Driving Liscense for driver %d\n",i+1);
+//         // scanf("%s", &dr[i].name);        
+//         scanf("%s",&d[i].dlno);
+        
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("Specify the route for driver %d (1,2,or 3)\n",i+1);
+//         // scanf("%s", &dr[i].name);        
+//         scanf("%d",&d[i].route);
+        
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("Enter the kms travelled for driver %d\n",i+1);
+//         // scanf("%s", &dr[i].name);        
+//         scanf("%d",&d[i].kms);
+        
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("Name of driver %d is %s\n",i+1,d[i].name);
+//         printf("Driving Liscense of driver %d is %s\n",i+1,d[i].dlno);
+//         printf("Route of driver %d is %d\n",i+1,d[i].route);
+//         printf("Kms driven for driver %d is %d\n",i+1,d[i].kms);
+//         printf("\n\n");
+        
+//     }
+    
+    
+
+// return 0;
+// }
