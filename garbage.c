@@ -2113,77 +2113,77 @@
 // element - 5 : 6
 // Expected Output :
 
-//  The elements of array in reverse order are :                                                                 
-//  element - 5 : 6                                                                                              
-//  element - 4 : 5                                                                                              
-//  element - 3 : 4                                                                                              
-//  element - 2 : 3                                                                                              
+//  The elements of array in reverse order are :
+//  element - 5 : 6
+//  element - 4 : 5
+//  element - 3 : 4
+//  element - 2 : 3
 //  element - 1 : 2
 
-    // #include<stdio.h>
-    // int main (){
+// #include<stdio.h>
+// int main (){
 
-    //     int temp,n,array[35];
-        
+//     int temp,n,array[35];
 
-    //     printf("Enter the number of elements you want to inut in the array\n");
-    //     scanf("%d",&n);
-    //     for (int i = 0; i < n; i++)
-    //     {
-    //         scanf("%d",&array[i]);
-    //     }
-    //     printf("Before\n");
-    //     for (int i = 0; i < n; i++)
-    //     {
-    //         printf("%d  ",array[i]);
-    //     }
-        
-    //     for (int i = 0; i < n/2; i++)
-    //     {
-    //         temp = array[i];
-    //         array[i]= array[n-i-1];
-    //         array[n-i-1] = temp;
-    //     }
+//     printf("Enter the number of elements you want to inut in the array\n");
+//     scanf("%d",&n);
+//     for (int i = 0; i < n; i++)
+//     {
+//         scanf("%d",&array[i]);
+//     }
+//     printf("Before\n");
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("%d  ",array[i]);
+//     }
 
-    //         printf("\nAfter\n");    
+//     for (int i = 0; i < n/2; i++)
+//     {
+//         temp = array[i];
+//         array[i]= array[n-i-1];
+//         array[n-i-1] = temp;
+//     }
 
-    //     for (int i = 0; i < n; i++)
-    //     {
-    //         printf("%d  ",array[i]);
-    //     }
-    // return 0;
-    // }
+//         printf("\nAfter\n");
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("%d  ",array[i]);
+//     }
+// return 0;
+// }
 
 // 22. Write a program in C to print a string in reverse using a pointer. Go to the editor
 // Test Data :
 // Input a string : w3resource
 // Expected Output :
 
-//  Pointer : Print a string in reverse order :                                                                  
-// ------------------------------------------------                                                              
-//  Input a string : w3resource                                                                                  
+//  Pointer : Print a string in reverse order :
+// ------------------------------------------------
+//  Input a string : w3resource
 //  Reverse of the string is : ecruoser3w
 
-// #include<stdio.h>
-// #include<string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-// int main (){
+// int main()
+// {
 
 //     char string[99];
 //     char temp;
 //     printf("Enter your string\n");
-//     fgets(string,99,stdin);
+//     fgets(string, 99, stdin);
 //     int len = strlen(string);
-//     printf("The string before reversal is %s ",string);   
-//     for (int i = 0; i < (len-1)/2; i++)
+//     printf("The string before reversal is %s ", string);
+//     for (int i = 0; i < len / 2; i++)
 //     {
 //         temp = string[i];
-//         string[i]= string[len - i - 1];
+//         string[i] = string[len - i - 1];
 //         string[len - i - 1] = temp;
 //     }
-    
-//     printf("\nThe string after reversal is %s ",string);   
-// return 0;
+
+//     printf("\nThe string after reversal is %s ", string);
+//     return 0;
 // }
 //////////////////////////////OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR OR////////////////////
 // #include <stdio.h>
@@ -2194,8 +2194,8 @@
 //     char *stptr = str1;
 //     char *rvptr = revstr;
 //     int i=-1;
-//  	// printf("\n\n Pointer : Print a string in reverse order :\n"); 
-// 	// printf("------------------------------------------------\n");	
+//  	// printf("\n\n Pointer : Print a string in reverse order :\n");
+// 	// printf("------------------------------------------------\n");
 //     printf(" Input a string : ");
 //     // scanf("%s",str1);
 //     fgets(str1,50,stdin);
