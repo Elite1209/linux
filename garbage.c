@@ -391,6 +391,24 @@
 
 //   return 0;
 // }
+///////////////////////////////////////////////////////////////Area and Circumference of a circle ///////////////////////////////////////
+// #include<stdio.h>
+// #define pi 3.141528
+// #define square(x) x*x
+
+// int main (){
+
+//     int rad;
+//     float area, circumference;
+//     printf("Enter the radius of circle \n");
+//     scanf("%d",&rad);
+//     area =  pi*square(rad);
+//     circumference = 2*pi*rad;
+//     printf("The area is %.2f\nCircumference i %.2f\n",area,circumference);
+
+
+// return 0;
+// }
 
 // 10. Write a program in C to display the pattern like right angle triangle with a number. Go to the editor
 
