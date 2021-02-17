@@ -406,7 +406,6 @@
 //     circumference = 2*pi*rad;
 //     printf("The area is %.2f\nCircumference i %.2f\n",area,circumference);
 
-
 // return 0;
 // }
 
@@ -2544,5 +2543,65 @@
 
 // return 0;
 // }
+// 10. Write a program in C to separate odd and even integers in separate arrays. Go to the editor
+// Test Data :
+// Input the number of elements to be stored in the array :5
+// Input 5 elements in the array :
+// element - 0 : 25
+// element - 1 : 47
+// element - 2 : 42
+// element - 3 : 56
+// element - 4 : 32
+// Expected Output :
+// The Even elements are :
+// 42 56 32
+// The Odd elements are :
+// 25 47
+// #include <stdio.h>
+// int main()
+// {
 
+//     int arr[35], n, odd[35], even[35];
+//     printf("Enter the number  of elements you want in the array\n");
+//     scanf("%d", &n);
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("Element %d : ", i + 1);
+//         scanf("%d", &arr[i]);
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (arr[i] % 2 == 0)
+//         {
+//             even[i] = arr[i];
+//             // printf("The even elements are %d  \n",arr[i]);
+//             // printf("The even elements are %d  ", even[i]);
+//         }
+//         else
+//         {
+//             odd[i] = arr[i];
+
+//             // printf("The odd elements are %d   \n",arr[i]);
+//             // printf("The odd elements are %d  ", odd[i]);
+//         }
+//     }
+//     printf("\nThe Even elements are : \n");
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (even[i] != 0)
+//         {
+//             printf("%d ", even[i]);
+//         }
+//     }
+//     printf("\nThe Odd elements are :\n");
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (odd[i] != 0)
+//         {
+//             printf("%d ", odd[i]);
+//         }
+//     }
+
+//     return 0;
+// }
 
