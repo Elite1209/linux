@@ -2331,3 +2331,93 @@
 
 // return 0;
 // }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////Snake Water Gun //////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////Random Number Generator/////////////////////////////////////////////////////////////////////
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<time.h>
+// int main (){
+
+//     srand(time(NULL));//Here time function return the second count if we dont initialize to null or 0 it will not givea random number
+//     int random  = (rand()%3)+1;
+//     printf("%d ",random);
+
+// return 0;
+// }
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<time.h>
+// int game(char you, char comp)
+// {
+    
+//     if (you == comp)
+//     {
+//         // printf("Draw\n");
+//         return 0;
+//     }
+//     if (you == 'w',comp == 's')
+//     {
+//         return -1;
+//     }
+//     else if (you == 'w',comp == 'g')
+//     {
+//         return 1;
+//     }
+//     if (you == 's',comp == 'w')
+//     {
+//         return 1;
+//     }
+//     else if (you == 's',comp == 'g')
+//     {
+//         return -1;
+//     }
+//     if (you == 'g',comp == 's')
+//     {
+//         return 1;
+//     }
+//     else if (you == 'g',comp == 'w')
+//     {
+//         return -1;
+//     }
+// }
+// int main (){
+//     char you,comp;
+//     srand(time(NULL));//Here time function return the second count if we dont initialize to null or 0 it will not givea random number
+//     int random  = (rand()%100)+1;
+//     printf("Enter what do you want to choose\nPress 'w' for Water\nPress 's' for Snake\nPress 'g' for Gun\n");
+//     scanf("%c",&you);
+//     if (random >=1 && random<33)
+//     {
+//         comp = 'g';
+//     }
+//     else if (random >=34 && random<66)
+//     {
+//         comp = 's';
+//     }
+//     else 
+//     {
+//         comp = 'q';
+//     }
+    
+//     int result = game(you,comp);
+//     if (result == 1)
+//     {
+//         printf("You chose %c and Computer chose %c You Win !!",you,comp);
+//     }
+//     else if (result == -1)
+//     {
+//         printf("You chose %c and Computer chose %c You Lose :(",you,comp);
+//     }
+//     else
+//     {
+//         printf("You both chose %c Its a Draw",you);
+//     }
+    
+    
+
+//     return 0;
+// }

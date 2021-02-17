@@ -88,3 +88,16 @@
 
 // return 0;
 // }
+
+///////////////////////////////////////////////////////////////////////////////Random Number Generator/////////////////////////////////////////////////////////////////////
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<time.h>
+// int main (){
+
+//     srand(time(NULL));//Here time function return the second count if we dont initialize to null or 0 it will not givea random number
+//     int random  = (rand()%3)+1;
+//     printf("%d ",random);
+
+// return 0;
+// }
