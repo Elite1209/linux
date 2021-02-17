@@ -2215,3 +2215,61 @@
 //     printf(" Reverse of the string is : %s\n\n",revstr);
 //     return 0;
 // }
+
+/////////////////////////////////////////////////////////////////////////Program to make a html parser ////////////////////////////////////////////////////
+
+// #include<stdio.h>
+// #include<string.h>
+// void parser(char * string)
+// {
+//     int in = 0;
+//     int index = 0;
+//     for (int i = 0; i < strlen(string); i++)
+//     {
+//         if (string[i] == '<')
+//         {
+//             in = 1;
+//             continue;
+//         }
+//         else if (string[i] == '>')
+//         {
+//             in = 0;
+//             continue;
+//         }
+//         if (in == 0)
+//         {
+//             string[index] = string[i];
+//             index++;
+//         }
+        
+        
+        
+//     }
+//     string[index] = '\0';
+//     //For removing spaces from beginning
+//     while (string[0] == ' ')
+//     {
+//         for (int i = 0; i < strlen(string); i++)
+//         {
+//             string[i] = string[i+1];
+
+//         }
+        
+//     }
+//     //For removing spaces from end
+//     while (string[strlen(string)-1] == ' ')
+//     {
+//         string[strlen(string)- 1] = '\0';
+//     }
+// }
+// int main (){
+
+//     char string[] = "<h1>                    This is the heaading                      </h1>";
+//     printf("This is the string before parsing it%s\n",string);
+//     parser(string);
+//     printf("This is the string after parsing it :-\n-->%s<--\n",string);
+
+
+// return 0;
+// }
+
